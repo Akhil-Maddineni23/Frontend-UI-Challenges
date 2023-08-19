@@ -1,0 +1,28 @@
+.main-accordion-container{
+    margin-top: 50px;
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.accordion{
+    display : flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width : 700px;
+    height : auto;
+    flex-wrap: wrap;
+
+    border : 2px solid black;
+}
+
+.inner-content{
+    display : flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width : 700px;
+}
+

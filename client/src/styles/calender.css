@@ -1,0 +1,125 @@
+.main-calender-container{
+    margin-top: 100px;
+    height: 400px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    border : 2px solid black;
+    border-radius: 10px;
+}
+
+.selected-date{
+    margin-top: 10px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.select-year-month{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap : 40px;
+}
+.year{
+    position : relative;
+}
+.outer-year{
+    display : flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap : 20px;
+}
+.years-list{
+    left : -200px;
+    position : absolute;
+    z-index: 10;
+
+    display : grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #F1F0E8;
+
+    width : 300px;
+    height : 300px;
+    overflow-y: auto
+}
+.inner-year{
+    display : block;
+    width : 50px;
+    padding : 5px;
+    cursor: pointer;
+
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: #8CABFF; 
+    }
+}
+
+
+.month{
+    position : relative;
+}
+.outer-month{
+    display : flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap : 20px;
+}
+.months-list{
+    position : absolute;
+    z-index: 10;
+
+    display: flex;
+    flex-direction: column;
+    background-color: #F1F0E8;
+    gap : 10px;
+
+    width : 160px;
+    height : 300px;
+    overflow-y: auto
+}
+
+.inner-month{
+    display : block;
+    height : auto;
+    width : 100px;
+    padding : 5px;
+    cursor: pointer;
+
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: #8CABFF; 
+    }
+}
+
+
+
+.date-grid{
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    height : 250px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap:10px;
+}
+
+
+.date-cell span{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    padding : 5px;
+    cursor: pointer;
+    border-radius: 50%;
+}
